@@ -28,6 +28,12 @@ export default class Cl_vEvaluaciones {
     this.btVolver = document.getElementById("evaluacionesForm_btVolver");
     this.btVolver.onclick = () =>
       this.controlador.activarVista({ vista: vistas.app });
+
+    this.btEstudiantes = document.getElementById("evaluacionesForm_btEstudiantes");
+    this.btEstudiantes.onclick = () =>
+      this.controlador.activarVista({
+        vista: vistas.estudiantes,
+      });
   }
   iniciar(controlador) {
     this.controlador = controlador;
